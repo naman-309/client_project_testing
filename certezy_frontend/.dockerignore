@@ -1,0 +1,24 @@
+# Dependencies — installed fresh inside Docker
+node_modules
+
+# Build output — gets generated inside Docker
+dist
+
+# Git
+.git
+.gitignore
+
+# Environment files — never send to Docker
+.env
+.env.local
+.env.development
+.env.production
+
+# Editor & OS files
+.DS_Store
+.vscode
+*.log
+
+# Docker files themselves
+Dockerfile*
+docker-compose*

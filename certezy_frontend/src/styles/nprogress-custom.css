@@ -1,0 +1,26 @@
+/* nprogress-custom.css
+ *
+ * Import karo main.jsx ya index.css mein:
+ *   import "nprogress/nprogress.css";
+ *   import "@/styles/nprogress-custom.css";
+ *
+ * Yeh default nprogress.css ko override karta hai
+ */
+
+/* Bar color — brand #3282B8 */
+#nprogress .bar {
+    background: #3282b8 !important;
+    height: 2.5px !important;
+}
+
+/* Glow effect */
+#nprogress .peg {
+    box-shadow:
+        0 0 10px #3282b8,
+        0 0 5px #3282b8 !important;
+}
+
+/* Spinner hide — already disabled in config but just in case */
+#nprogress .spinner {
+    display: none !important;
+}
